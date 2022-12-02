@@ -1,0 +1,111 @@
+.home__container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: main-content;
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+}
+. {
+  margin-bottom: 20px;
+}
+
+.card__group {
+  dispcard__zonelay: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(270px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 260px;
+  background: rgba(243, 249, 245, 0.228);
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card .card__thumbnail {
+  width: auto;
+  height: 170px;
+  border-radius: 5px;
+}
+
+.card .card__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 5px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.card .card__wrapper p {
+  margin: 0;
+}
+
+.card .card__wrapper .read-more {
+  font-weight: 300;
+  color: #4dc49a;
+  position: relative;
+  width: 120px;
+}
+
+.card .icon__arrowLeft {
+  color: #4dc49a;
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+  transition: left 0.5s;
+  -moz-transition: left 0.5s;
+  -o-transition: left 0.5s;
+  -webkit-transition: left 0.5s;
+  -ms-transition: left 0.5s;
+}
+
+.card:hover .icon__arrowLeft {
+  left: -10px;
+}
+
+.card .read-more:hover .icon__arrowLeft {
+  left: -10px;
+}
+
+.card .card__title {
+  color: #39466f;
+}
+
+.card .arrow-left {
+  color: #4dc49a;
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+  transition: left 0.5s;
+  -moz-transition: left 0.5s;
+  -o-transition: left 0.5s;
+  -webkit-transition: left 0.5s;
+  -ms-transition: left 0.5s;
+  left: 2px;
+  direction: ltr;
+}
+
+.card:hover .arrow-left {
+  left: -10px;
+}
+
+.card .read-more:hover .arrow-left {
+  left: -10px;
+}

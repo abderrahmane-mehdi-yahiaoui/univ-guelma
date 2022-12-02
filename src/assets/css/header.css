@@ -1,0 +1,354 @@
+header {
+  background-color: #fff;
+  height: auto;
+  object-fit: contain;
+  width: 100%;
+  top: 0;
+  overflow: hiddn;
+  position: relative;
+  -webkit-box-shadow: 0 10px 20px -6px #fafafa80;
+  box-shadow: 0 10px 20px -6px #fafafa80;
+  direction: rtl;
+  font-size: 20px;
+}
+
+.header__topMenu {
+  height: auto;
+  width: 100%;
+  height: 65px;
+  padding: 8px 15px 2px 0.1em;
+  background-image: url(https://univ-guelma/ressources/images/overlay.svg),
+    linear-gradient(45deg, #4dc49a 0%, #3e9d7b 100%);
+  background-size: auto;
+  background: #4dc49a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: relative;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+/* adding class to hide the bar */
+.header__topMenu--hidden {
+  display: none;
+  position: absolute;
+  top: -100px;
+  height: 0;
+}
+
+.hide__top-m {
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
+}
+
+.hide__top-m .fa-times {
+  color: rgba(255, 255, 255, 0.475);
+  font-size: 20px;
+}
+
+.hide__top-m:hover .fa-times {
+  -webkit-filter: brightness(1%);
+  filter: brightness(1%);
+}
+
+.ask__hide {
+  padding: 15px;
+  color: #3e9d7b;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  right: 47px;
+  bottom: 6px;
+  width: 290px;
+}
+
+.header__topMenu__links {
+  margin: auto 15px auto 10px;
+}
+.header__topMenu__links ul {
+  font-size: 0.8em;
+}
+.header__topMenu__links ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 5px;
+}
+
+.header__topMenu__links ul a {
+  margin-right: 5px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.have__drop {
+  position: relative;
+  display: block;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: #f9f7fb;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 96;
+  top: 20px;
+  left: -20px;
+  padding: 0;
+  margin: 0;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.have__drop:hover .dropdown__content {
+  display: block;
+}
+
+.header__topMenu__links .dropdown__content a {
+  float: none;
+  color: #39466f;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  margin: 0;
+  text-transform: unset;
+}
+
+.have__drop .dropdown__content a:hover {
+  color: #fff;
+  background: #4dc49a;
+}
+
+.lang__switch {
+  width: 120px;
+  height: 45px;
+  padding: 7px 0px 5px 15px;
+  border-radius: 10px;
+  background: #f9f7fb;
+  z-index: 95;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  margin-left: 10px;
+}
+
+.lang__switch .lang__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.lang__link > span {
+  margin-right: 8px;
+}
+
+.dropdown__lang {
+  display: none;
+}
+
+.drop-lang__links .en {
+  cursor: not-allowed;
+}
+
+.lang__switch:hover {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.lang__switch:hover .dropdown__lang {
+  display: block;
+}
+
+.header__bottom {
+  width: 100%;
+  height: 90px;
+  object-fit: contain;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+
+.b__logo {
+  height: 75px;
+}
+
+.menu__toggle {
+  cursor: pointer;
+}
+
+.menu__toggle > .icon {
+  color: #2b6e02;
+  font-size: 30px;
+}
+
+/* OVERLAY ( MEGA MENU) */
+.menu__overlay {
+  width: 0%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f9f7fb;
+  -webkit-transition: ease-in-out 0.7s;
+  transition: ease-in-out 0.7s;
+  z-index: 100;
+  overflow-y: hidden;
+  direction: rtl;
+}
+
+.menu__container {
+  position: relative;
+  font-size: 25px;
+}
+.active {
+  left: 0;
+  width: 100%;
+}
+
+.close__menu {
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  font-size: 35px;
+  cursor: pointer;
+  direction: ltr;
+}
+
+.close__menu .icon {
+  /*color: #4DC49A;*/
+  color: #2b6e02;
+  display: inline-block;
+  border-radius: 80px;
+  padding: 0.1em 0.2em;
+  height: 40px;
+  width: 40px;
+}
+
+.close__menu .icon:hover {
+  /*background-color: rgba(228, 247, 242, 0.913);*/
+  background-color: #ddecd5;
+}
+
+.logo {
+  direction: rtl;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav ul {
+  display: -ms-grid;
+  display: grid;
+  flex-direction: row;
+  gap: 20px;
+
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+#menu-logo {
+  margin: 30px;
+}
+
+nav a {
+  color: #9aa4b4;
+  text-transform: capitalize;
+  position: relative;
+}
+
+nav .link:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #2b6e02;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  -webkit-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+nav .link:hover:after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: #2b6e02;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.menu__overlay nav .sub__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relatve;
+}
+
+nav .sub__links a:hover:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 90%;
+  background-color: #2b6e02;
+  top: 0px;
+  right: -8px;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+
+.sub__links {
+  margin-top: 30px;
+}
+
+.menu__overlay nav .sub__links a {
+  line-height: 2em;
+  color: #39466f;
+}
+
+.menu__overlay nav .sub__links a:hover {
+  text-decoration: underline;
+}
+
+/* ---- END OVERLAY (MENU) ----*/

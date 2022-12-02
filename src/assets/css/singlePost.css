@@ -1,0 +1,40 @@
+.singlePost__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 20px;
+  padding: 30px;
+}
+.singlePost__bottom {
+  margin: 15px;
+}
+
+.singlePost__container h6 {
+  margin-top: 5px;
+}
+
+.post__thumbnail {
+  width: 90%;
+  max-height: 360px;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+.post__content {
+  margin: 20px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.post__link {
+  color: #4dc49a;
+}
+
+.post__link:hover {
+  text-decoration: underline;
+}
+
+.post__time,
+.post__tag {
+  font-size: 15px;
+}
